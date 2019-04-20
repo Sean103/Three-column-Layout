@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏布局</title>
+    <style>
+        #content::after {
+            content: '';
+            display: block;
+            clear: both;
+
+        }
+
+        .aside1 {
+            width:200px;
+            height:500px;
+            background:red;
+            float:left;
+        }
+        .aside2 {
+            width:200px;
+            height:500px;
+            background:blue;
+            float:right;
+        }
+
+        .main {
+            margin:0 210px;
+            height:700px;
+            background:pink;
+
+        }
+        #footer {
+            background:transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id = "content">
+        <div class = "aside1"></div>
+        <div class = "aside2"></div>
+        <div class = "main"></div>
+
+    </div>
+    <div id = "footer"></div>
+
+</body>
+</html>
